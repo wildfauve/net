@@ -1,0 +1,17 @@
+<%= form_for(@search, html: { class: "custom"}) do |f| %>
+   <div class="row">
+     <div class="small-3 columns">
+       <%= f.label :icp, nil, class: "right inline"%>
+     </div>
+     <div class="small-4 columns end">
+       <%= f.text_field :icp %>
+     </div> 
+   </div>
+   
+   <div class="row">
+     <div class="small-9 small-offset-3 columns">
+       <%= f.submit 'Submit', :class => 'button small' %>
+     </div>
+   </div>
+   
+<% end %>

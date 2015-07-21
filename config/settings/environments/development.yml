@@ -1,0 +1,5 @@
+reg:
+  wsdl: "https://wwwmarureg.electricityregistry.co.nz/bin_public/Jadehttp.dll?WebService&listName=WSP_Registry2&serviceName=WSRegistry&wsdl=wsdl"
+  user_name: "FLICK"
+  password: "Mon29June"
+  
