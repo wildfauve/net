@@ -11,7 +11,7 @@ class CircuitBreaker
     @availability = availability
     @circuit = block
     @method = method
-    @invocation_timeout = 2.5
+    @invocation_timeout = 3
     @failure_threshold = 3
     @monitor = monitor
     @reset_timeout = 3.01

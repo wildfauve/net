@@ -38,6 +38,7 @@ gem "will_paginate_mongoid"
 gem 'mc-settings'
 
 gem 'savon'
+gem "rack-timeout"
 
 
 # Use ActiveModel has_secure_password

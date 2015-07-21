@@ -28,7 +28,6 @@ module SoapPort
     end  
 
     def send_to_port(pattern: nil, message: nil, connection: nil, response_into: nil)
-      raise
       resp = connection[:object].call(connection[:method], message: message)
       #resp = self.send(pattern, connection: connection)
       raise
