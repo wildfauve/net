@@ -11,7 +11,7 @@ class IcpPort < SoapPort::Port
   end
   
   def initialize
-    @reg = IcpPort.end_point
+    @reg.nil? ? @reg = IcpPort.load_wsdl : @reg = IcpPort.end_point
     @user_name = Setting.reg(:user_name)
     @password = Setting.reg(:password)
     self
