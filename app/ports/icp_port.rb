@@ -2,8 +2,16 @@ class IcpPort < SoapPort::Port
   
   attr_accessor :icp_details
   
+  def self.load_wsdl
+    @registry = Savon.client(:wsdl => Setting.reg(:wsdl) )
+  end
+  
+  def self.end_point
+    @registry
+  end
+  
   def initialize
-    @reg = Savon.client(:wsdl => Setting.reg(:wsdl) )
+    @reg = IcpPort.end_point
     @user_name = Setting.reg(:user_name)
     @password = Setting.reg(:password)
     self

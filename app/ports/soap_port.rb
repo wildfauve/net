@@ -29,9 +29,7 @@ module SoapPort
 
     def send_to_port(pattern: nil, message: nil, connection: nil, response_into: nil)
       resp = connection[:object].call(connection[:method], message: message)
-      #resp = self.send(pattern, connection: connection)
-      raise
-      #instance_variable_set(response_into[:inst_var], resp.body[response_into[:soap_root]])
+      instance_variable_set(response_into[:inst_var], resp.body[response_into[:soap_root]])
     end
     
     def sync(connection: nil)

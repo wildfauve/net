@@ -1,0 +1,1 @@
+IcpPort.load_wsdl

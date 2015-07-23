@@ -1,5 +1,6 @@
 reg:
   wsdl: "https://wwwmarureg.electricityregistry.co.nz/bin_public/Jadehttp.dll?WebService&listName=WSP_Registry2&serviceName=WSRegistry&wsdl=wsdl"
-  user_name: "FLICK"
-  password: "Mon29June"
+  user_name: <%= ENV['REG_USER_NAME'] %>
+  password: <%= ENV['REG_PASSWORD'] %>
+  test_icp: "0144969963LCDF9"
   
